@@ -1,0 +1,11 @@
+print("Welcome to Sonia's School!")
+p = int(input("How many students are in your class?"))
+times = 1
+while times <= p:
+  a = str(input("What is his/her name?"))
+  gm = int(input("What was his/her score in math?"))
+  ge = int(input("What was his/her score in english?"))
+  gs = int(input("What was his/her score in science?"))
+  s1t = gm + ge + gs
+  print(a , s1t)
+  times = times + 1

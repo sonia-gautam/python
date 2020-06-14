@@ -1,0 +1,17 @@
+d = input('What is your fortune dice number?')
+if d == 1 :
+  print('You are smarter than you think')
+if d == 2 :
+  print('Your life will be full of joy')
+if d == 3 :
+  print('You will always gain by giving')
+if d == 4 :
+  print('If you want a rainbow, you need to put up with the rain')
+if d == 5 :
+  print('You are very lucky')
+if d == 6 :
+  print('With great power comes great responsibility')
+if d > 6 :
+  print("That's not a valid fortune dice number!")
+if d == 0 :
+  print("Did you even roll the dice yet?!")

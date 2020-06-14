@@ -1,0 +1,6 @@
+##n = "qw#@!eqweqweqwe22342342435"
+n = str ( input ('Write a number ') )
+print (n)
+##s = str(n)
+m = len(n)
+print (m)
