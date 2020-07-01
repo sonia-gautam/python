@@ -1,0 +1,6 @@
+n = input("Enter a number:")
+try:
+  p = float(n)
+except Exception:
+  print("This is invalid")
+  print(p)
