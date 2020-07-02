@@ -1,18 +1,28 @@
+largest = None
+smallest = None
 while True:
   num = input("Enter a number: ")
   if num == "done" :
       break
-  try :
+  try : 
     p = int(num)
+
   except Exception :
-    print("Invalid Input")
+    print("Invalid input")
     continue
-  largest = 0
-  print(largest)
-  for value in p :
-      print(p)
-      if value > largest :
-        largest = value
-      else:
-        continue
-      print("Maximum", largest)
+
+  if largest == None :
+    largest = p
+
+  elif largest < p :
+    largest = p
+
+  if smallest == None :
+    smallest = p
+
+  elif smallest > p :
+    smallest = p
+
+
+print("Maximum is", largest)
+print("Minimum is", smallest)
