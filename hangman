@@ -4,15 +4,25 @@ print("Welcome to Sonia's Python hangman!")
 time.sleep(1)
 name = input("What is your name? ")
 print("Good Luck ! ", name)
-word = ("water", "earth", "fire" "air", "moon", "sun", "stars", "leaves", "nature")
+word = ("water", "earth", "fire", "air", "moon", "sun", "stars", "leaves", "nature", "eclipse")
 word = (random.choice(word))
-#print(word)
+print(word)
+lword = len(word)
+#print (lword)
+wordm = 1
+print("Your word length is...")
+while wordm <= lword:
+  wordm = wordm + 1
+  print(" -", end = "")
+print(" ")
 print("Start guessing...")
 time.sleep(1)
 turns = 1
 while turns <= 10 :
   turns = turns + 1
   guess = str(input("Guess:"))
+  try:
+    len(guess)
   char = guess
   if char in word:
       print(char)
