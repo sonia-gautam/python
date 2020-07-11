@@ -1,7 +1,7 @@
 import time
 import random
 print("Welcome to Sonia's Python hangman!")
-time.sleep(1)
+time.sleep(0.5)
 name = input("What is your name? ")
 print("Good Luck ! ", name)
 word = ("water", "earth", "fire", "air", "moon", "sun", "stars", "leaves", "nature", "eclipse")
@@ -21,11 +21,14 @@ turns = 1
 while turns <= 10 :
   turns = turns + 1
   guess = str(input("Guess:"))
-  try:
-    len(guess)
+  x=len(guess)
+  if x !=1:
+      print("Invalid input")
   char = guess
   if char in word:
       print(char)
+  
+
   else:
       print("-")
 final = str(input("What is you final word guess?"))
